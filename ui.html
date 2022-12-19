@@ -1,0 +1,42 @@
+<style>
+  body {
+    font: 12px sans-serif;
+    text-align: center;
+    margin: 20px;
+  }
+
+  .btn-group button {
+    border-radius: 5px;
+    background-color: lightgray;
+    border: 1px solid black;
+    box-shadow: inset 0 0 0 1px black;
+    color: black;
+    padding: 10px 24px;
+    cursor: pointer;
+    width: 70%;
+    display: block;
+    margin: 10px auto;
+  }
+
+
+  /* Add a background color on hover */
+  .btn-group button:hover {
+    background-color: white;
+  }
+</style>
+
+<div class="btn-group">
+  <button onClick="showImage()">Apply SVG</button>
+  <button onClick="hideImage()">Remove SVG</button>
+</div>
+<div id="ourSvg" style="height:20px; width:20px; display:none; margin: 20px auto;">
+  <img src="https://icon.fra1.cdn.digitaloceanspaces.com/Bootstrap%20Icons/icons/alarm-fill.svg" />
+</div>
+<script>
+  const showImage = () => {
+    document.getElementById("ourSvg").style.display = 'flex';
+  }
+  const hideImage = () => {
+    document.getElementById("ourSvg").style.display = 'none';
+  }
+</script>

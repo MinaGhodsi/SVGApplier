@@ -1,0 +1,11 @@
+{
+  "name": "SVG Applier",
+  "id": "1186639893392794940",
+  "api": "1.0.0",
+  "main": "code.js",
+  "editorType": [
+    "figma",
+    "figjam"
+  ],
+  "ui": "ui.html"
+}
